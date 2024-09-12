@@ -1,3 +1,5 @@
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,4 +13,29 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+  /* PALETA ORIGINAL */
+  /*
+  --dark: #181818;
+  --mid-dark: rgba(0,99,99,.7);
+  --mid-light: darkcyan;
+  --light: #006c8c;
+  */
+  
+  /* PALETA 1 */
+  /*
+  --dark: #0F0F0F;
+  --mid-dark: #232D3F;
+  --mid-light: #005B41;
+  --light: #008170;
+  */
+
+  /* PALETA 2 */
+  /*
+  --dark: #040D12;
+  --mid-dark: #183D3D;
+  --mid-light: #5C8374;
+  --light: #93B1A6;
+  */
 }

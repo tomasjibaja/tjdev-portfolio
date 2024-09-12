@@ -1,19 +1,25 @@
-import Info from './components/Info'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
+import Router from './router/Router'
+import Nav from './components/Nav'
+import { BrowserRouter } from 'react-router-dom'
 import './App.css'
+import BackgroundVideo from './components/BackgroundVideo'
 
 
 function App() {
 
   return (
-    <div className='porfolio'>
-      <div className="card">
-        <Info />
-        <Skills />
+    <BrowserRouter>
+      <div className='porfolio'>
+        <div className="card">
+          <h2>Tomás Jibaja</h2>
+          <img src="./smallProfile.png" alt="Tomas Jibaja" />
+        </div>
+        <Nav />
+        <Router />
       </div>
-      <Projects />
-    </div>
+      <footer>&#169; Tomás Jibaja</footer>
+      <BackgroundVideo />
+    </BrowserRouter>
   )
 }
 

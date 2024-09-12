@@ -1,14 +1,26 @@
 import React from 'react'
+import { DiReact, DiJsBadge, DiHtml5, DiCss3 } from 'react-icons/di'
 
 const Skills = () => {
   return (
-    <div>
-      <h2>SKILLS</h2>
+    <div className='skills'>
       <div className="skills-wrapper">
-        <i className="fa-brands fa-html5"></i>
-        <i className="fa-brands fa-css3"></i>
-        <i className="fa-brands fa-js"></i>
-        <i className="fa-brands fa-react"></i>
+        <div>
+          <DiHtml5 />
+          <span>HTML5</span>
+        </div>
+        <div>
+          <DiCss3 />
+          <span>CSS3</span>
+        </div>
+        <div>
+          <DiJsBadge />
+          <span>JAVASCRIPT</span>
+        </div>
+        <div>
+          <DiReact />
+          <span>REACT JS</span>
+        </div>
       </div>
     </div>
   )

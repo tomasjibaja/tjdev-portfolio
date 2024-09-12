@@ -1,28 +1,32 @@
 import React from 'react'
 import { Link, BrowserRouter } from 'react-router-dom'
 import { projects } from '../data/data'
+import { MdArrowOutward } from "react-icons/md";
 
 const Projects = () => {
 
   return (
     <>
-      <h2>PROYECTOS</h2>
+      <div className="fade-effect fade-start"></div>
+      <div className="fade-effect fade-end"></div>
       <div className='projects-wrapper'>
-        <BrowserRouter>
           {projects.map(
             (elem, index) => {
               return (
-                <div className='project-card' key={index} >
-                  <h3>{elem.title}</h3>
-                  <img src={`./${elem.thumbnail}`} alt="" />
-                  <p>{elem.description}</p>
-                  <div className='project-skills'>{elem.skills.map((elem, index) => {return <span key={index}>{elem}</span>})}</div>
-                  <Link target='blank' to={elem.url}>Ir al sitio</Link>
-                </div>
+                  <Link target='blank' to={elem.url}>
+                  <div className='project-card' key={index} >
+                    <MdArrowOutward />
+                    <img src={`./${elem.thumbnail}`} alt="" />
+                    <div className="project-info">
+                      <h3>{elem.title}</h3>
+                      <p>{elem.description}</p>
+                      <div className='project-skills'>{elem.skills.map((elem, index) => {return <span key={index}>{elem}</span>})}</div>
+                    </div>
+                  </div>
+                </Link>
               )
             }
           )}
-        </BrowserRouter>
       </div>
     </>
     
