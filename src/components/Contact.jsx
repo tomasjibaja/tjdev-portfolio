@@ -21,7 +21,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='contact'>
+    <div className='contact visible'>
       <span><Link target='blank' to={'mailto:tomasjibaja@gmail.com'}><MdOutlineMailOutline /></Link>tomasjibaja@gmail.com<FaRegCopy onClick={copyMail} /></span>
       {/* <span><Link target='blank'><FaWhatsapp /></Link>1136777250<FaRegCopy onClick={copyWapp} /></span> */}
     </div>

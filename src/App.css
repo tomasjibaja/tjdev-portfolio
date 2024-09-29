@@ -12,8 +12,8 @@
 
   --dark: #040D12;
   --mid-dark: #183D3D;
-  --mid-light: #5C8374;
-  --light: #93B1A6;
+  --mid-light: #497766;
+  --light: #50ac8a;
   --shadow10: rgba(70,70,70,.1);
   --shadow30: rgba(70,70,70,.3);
   --shadow70: rgba(70,70,70,.7);
@@ -50,10 +50,10 @@ footer {
 .card {
   position: absolute;
   left: 30px;
-  top: 20px;
+  top: 30px;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: left;
   gap: 40px;
   height: 80px;
@@ -68,9 +68,10 @@ footer {
 
 .card > img {
   width: 70px;
+  padding: 3px;
   border-radius: 50%;
   border-bottom: 7px solid var(--mid-dark);
-  background-image: linear-gradient(to top, rgba(99,180,220,.1), darkcyan);
+  background-image: linear-gradient(to top, rgba(99,180,220,.1), var(--mid-light));
   opacity: .7;
 }
 
@@ -113,9 +114,19 @@ nav > a:hover {
   margin: 0;
 }
 
-.info > span {
+.info > h3 > strong {
   font-weight: 500;
 }
+
+.info > p {
+  font-weight: 300;
+}
+
+.info > span {
+  font-weight: 300;
+  font-size: 12px;
+}
+
 
 
 
@@ -161,6 +172,7 @@ nav > a:hover {
   color: var(--light);
   transition: all .4s ease-in-out;
 }
+
 
 
 
@@ -288,7 +300,6 @@ nav > a:hover {
 
 
 
-
 .contact {
   position: absolute;
   display: flex;
@@ -327,6 +338,17 @@ nav > a:hover {
   color: var(--mid-dark);
 }
 
+.visible {
+  animation: appear .7s forwards ease-in;
+}
+
+.invisible {
+  animation: fade .5s forwards ease-in;
+}
+
+
+
+
 @media (min-width: 1024px) {
   .info {
     right: 30px;
@@ -361,12 +383,13 @@ nav > a:hover {
   .card {
     width: 100%;
     left: 0;
+    top: 25px;
     justify-content: space-evenly;
     align-items: start;
   }
 
   .card > img {
-    width: 50px;
+    width: 45px;
   }
 
   .card > h2 {
@@ -375,7 +398,7 @@ nav > a:hover {
 
   nav {
     width: 100%;
-    top: 90px;
+    top: 100px;
     left: 0;
     flex-direction: row;
     justify-content: space-evenly;
@@ -473,6 +496,16 @@ nav > a:hover {
   100% {transform: translate(0,0);}
 }
 
+@keyframes appear {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fade {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
 #bg-video {
   box-sizing: border-box;
   position: absolute;
@@ -483,6 +516,6 @@ nav > a:hover {
   object-fit: cover;
   overflow: clip;
   z-index: -1;
-  opacity: .03;
+  opacity: .1;
   filter: blur(30px);
 }

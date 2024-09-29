@@ -9,7 +9,7 @@ const Projects = () => {
     <>
       <div className="fade-effect fade-start"></div>
       <div className="fade-effect fade-end"></div>
-      <div className='projects-wrapper'>
+      <div className='projects-wrapper visible'>
           {projects.map(
             (elem, index) => {
               return (
