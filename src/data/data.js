@@ -7,16 +7,16 @@ export const projects = [
     url: 'https://india-en-tribu-landing2024.vercel.app/'
   },
   {
-    title: 'Kinta Health (mock)',
+    title: 'Kinta Health',
     thumbnail: 'kintahealth.png',
-    description: 'Aplicación web de gestión de turnos para entidades sanitarias',
+    description: 'Aplicación web de gestión de turnos para entidades sanitarias (mock)',
     skills: ['MERN'],
     url: 'https://kinta-health.vercel.app/'
   },
   {
-    title: 'Carepulse (mock)',
+    title: 'Carepulse',
     thumbnail: 'carepulse.png',
-    description: 'Aplicación web para gestión de turnos',
+    description: 'Aplicación web para gestión de turnos (mock)',
     skills: ['NEXT JS'],
     url: 'https://tj-carepulse.vercel.app/'
   },
@@ -42,23 +42,23 @@ export const projects = [
     url: 'http://www.silvinaregueiraeutonia.com.ar/'
   },
   {
-    title: 'Carrito de compras (mock)',
+    title: 'Carrito de compras',
     thumbnail: 'shop.png',
-    description: 'Consumición de API de productos (DummyJSON) para maquetar un sitio estilo e-commerce',
+    description: 'Consumición de API de productos (DummyJSON) para maquetar un sitio estilo e-commerce (mock)',
     skills: ['HTML', 'CSS', 'JS', 'REACT'],
     url: 'https://carrito-compras-psi.vercel.app/'
   },
   {
-    title: 'App de turismo (mock)',
+    title: 'App de turismo',
     thumbnail: 'viajes.png',
-    description: 'Maqueta de sitio con destinos para viajar y funcionalidad estilo carrito',
+    description: 'Maqueta de sitio con destinos para viajar y funcionalidad estilo carrito (mock)',
     skills: ['HTML', 'CSS', 'JS', 'REACT'],
     url: 'https://app-viajes.vercel.app/'
   },
   {
-    title: 'Sitio de películas (mock)',
+    title: 'Sitio de películas',
     thumbnail: 'pelis.png',
-    description: 'Consumición de API de películas (OMDb) para maquetar un buscador de películas que linkea a Cines Argentinos',
+    description: 'Consumición de API de películas (OMDb) para maquetar un buscador de películas que linkea a Cines Argentinos (mock)',
     skills: ['HTML', 'CSS', 'JS', 'REACT'],
     url: 'https://buscador-de-peliculas-omega.vercel.app/'
   },
