@@ -15,10 +15,6 @@ const Contact = () => {
     }, 2000)
   }
 
-  // const wappClick = () => {
-
-  // }
-
   const copyWapp = () => {
     navigator.clipboard.writeText('1136777250')
   }
@@ -26,7 +22,13 @@ const Contact = () => {
   return (
     <div className='contact visible'>
       <span className={`clipboard-msg ${copied && 'show'}`}>e-mail copiado al portapapeles</span>
-      <span>tomasjibaja@gmail.com<Link target='blank' to={'mailto:tomasjibaja@gmail.com'}><MdOutlineMailOutline /></Link><FaRegCopy onClick={copyMail} /></span>
+      <span className='email'>tomasjibaja@gmail.com</span>
+      <div className="contact-icons">
+        <Link className="contact-icons-send" target='blank' to={'mailto:tomasjibaja@gmail.com'}>
+          <MdOutlineMailOutline />
+        </Link>
+        <FaRegCopy className="contact-icons-copy" onClick={copyMail} />
+      </div>
       {/* <span><Link target='blank'><FaWhatsapp /></Link>1136777250<FaRegCopy onClick={copyWapp} /></span> */}
     </div>
   )

@@ -327,42 +327,53 @@ nav > a:hover {
 .contact {
   position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: end;
   gap: 10px;
 }
 
-.contact span a {
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-icons-send {
+  font-size: 25px;
+  margin-left: 10px;
   text-decoration: none;
   color: var(--light);
   display: flex;
   place-items: center;
+  transition: all .2s ease;
 }
 
-.contact span {
-  font-size: 16px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.contact span svg {
-  width: 20px;
-  height: 20px;
+.contact-icons-copy {
+  width: 30px;
+  height: 23px;
   margin: auto 12px;
   cursor: pointer;
   transition: all .2s ease;
 }
 
-.contact span svg:hover {
+.contact .email {
+  font-size: 21px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-icons-copy:hover, .contact-icons-send:hover {
   filter: drop-shadow(0 3px 7px var(--mid-light));
 }
 
-.contact  span  svg:active {
+.contact-icons-copy:active {
   color: var(--mid-dark);
 }
 
 .clipboard-msg {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
   opacity: 0;
   margin-bottom: 10px;
   margin-right: 20px;
@@ -493,8 +504,17 @@ nav > a:hover {
   }
 
   .contact {
-    bottom: 30px;
+    bottom: 50px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
   }
+
+  .contact-icons {
+    width: 70%;
+    justify-content: space-around;
+  }
+
 
   .projects-wrapper {
     flex-direction: row;
