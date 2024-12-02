@@ -376,8 +376,8 @@ nav > a:hover {
 @media (max-width: 1024px) {
 
   .porfolio {
-    width: 85vw;
-    height: 85vh;
+    width: 90vw;
+    height: 92vh;
   }
 
   .card {
@@ -440,6 +440,14 @@ nav > a:hover {
 
   .skills {
     bottom: 50px;
+  }
+
+  .skills-wrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
 
   .contact {

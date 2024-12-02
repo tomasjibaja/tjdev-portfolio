@@ -7,6 +7,13 @@ export const projects = [
     url: 'https://india-en-tribu-landing2024.vercel.app/'
   },
   {
+    title: 'Kinta Health (mock)',
+    thumbnail: 'kintahealth.png',
+    description: 'Aplicación MERN de gestión de turnos para entidades sanitarias',
+    skills: ['MERN'],
+    url: 'https://kinta-health.vercel.app/'
+  },
+  {
     title: 'Ceryt',
     thumbnail: 'ceryt.png',
     description: 'Aplicación-juego de educación musical para practicar y aprender células rítmicas',
@@ -28,21 +35,21 @@ export const projects = [
     url: 'http://www.silvinaregueiraeutonia.com.ar/'
   },
   {
-    title: 'Carrito de compras',
+    title: 'Carrito de compras (mock)',
     thumbnail: 'shop.png',
     description: 'Consumición de API de productos (DummyJSON) para maquetar un sitio estilo e-commerce',
     skills: ['HTML', 'CSS', 'JS', 'REACT'],
     url: 'https://carrito-compras-psi.vercel.app/'
   },
   {
-    title: 'App de turismo',
+    title: 'App de turismo (mock)',
     thumbnail: 'viajes.png',
     description: 'Maqueta de sitio con destinos para viajar y funcionalidad estilo carrito',
     skills: ['HTML', 'CSS', 'JS', 'REACT'],
     url: 'https://app-viajes.vercel.app/'
   },
   {
-    title: 'Sitio de películas',
+    title: 'Sitio de películas (mock)',
     thumbnail: 'pelis.png',
     description: 'Consumición de API de películas (OMDb) para maquetar un buscador de películas que linkea a Cines Argentinos',
     skills: ['HTML', 'CSS', 'JS', 'REACT'],
