@@ -429,8 +429,8 @@ nav > a:hover {
 @media (max-width: 1024px) {
 
   .porfolio {
-    width: 90vw;
-    height: 92vh;
+    width: 92vw;
+    height: 95dvh;
   }
 
   .card {
@@ -520,10 +520,18 @@ nav > a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 85%;
+    width: 91vw;
     height: 70%;
     top: 180px;
-    padding-left: 5vw;
+    padding-left: 11%;
+    animation: slide-in 1s ease 1;
+  }
+
+  .active-project {
+    background-color: var(--shadow10);
+    box-shadow: 0 7px 30px 1px var(--dark);
+    border-top: 1px solid var(--shadow30);
+    filter: brightness(1.1);
   }
 
   .project-card {
@@ -535,6 +543,14 @@ nav > a:hover {
 
   .project-card > svg {
     visibility: hidden;
+  }
+
+  .project-card > img {
+    opacity: 1;
+  }
+
+  .project-info > h3 {
+    text-align: center;
   }
 
   .fade-effect {
@@ -556,7 +572,7 @@ nav > a:hover {
   }
 
   footer {
-    left: 9vw;
+    left: 3vw;
   }
 }
 
@@ -574,4 +590,9 @@ nav > a:hover {
 @keyframes fade {
   0% {opacity: 1;}
   100% {opacity: 0;}
+}
+
+@keyframes slide-in {
+  0% {margin-left: 600px;}
+  100% {margin-left: 0;}
 }

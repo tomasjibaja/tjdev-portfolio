@@ -8,7 +8,7 @@ const Info = () => {
         Diseño y creación de aplicaciones y sitios web con estilo<br/>
 
       </p>
-      <span>Bernal, Buenos Aires, Argentina 🇦🇷</span>
+      {/* <span>Bernal, Buenos Aires, Argentina 🇦🇷</span> */}
     </div>
   )
 }

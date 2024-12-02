@@ -16,8 +16,8 @@ function App() {
         </div>
         <Nav />
         <Router />
+      {/* <footer>&#169; Tomás Jibaja</footer> */}
       </div>
-      <footer>&#169; Tomás Jibaja</footer>
       <BackgroundVideo />
     </BrowserRouter>
   )
