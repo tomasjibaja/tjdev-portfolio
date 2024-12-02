@@ -11,8 +11,8 @@ function App() {
     <BrowserRouter>
       <div className='porfolio'>
         <div className="card">
-          <h2>Tomás Jibaja</h2>
-          <img src="./smallProfile.png" alt="Tomas Jibaja" />
+          <h2>TOMAS JIBAJA</h2>
+            {/* <img src="./smallProfile.png" alt="Tomas Jibaja" /> */}
         </div>
         <Nav />
         <Router />

@@ -1,5 +1,6 @@
 import React from 'react'
-import { DiReact, DiJsBadge, DiHtml5, DiCss3, DiNodejsSmall, DiMongodb, DiExtjs } from 'react-icons/di'
+import { DiReact, DiJsBadge, DiHtml5, DiCss3, DiNodejsSmall, DiMongodb } from 'react-icons/di'
+import { RiNextjsFill } from "react-icons/ri";
 
 const Skills = () => {
   return (
@@ -28,6 +29,10 @@ const Skills = () => {
         <div>
           <DiMongodb />
           <span>MONGODB</span>
+        </div>
+        <div>
+          <RiNextjsFill />
+          <span>NEXT JS</span>
         </div>
       </div>
     </div>

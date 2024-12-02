@@ -36,6 +36,20 @@ strong {
   font-weight: 700;
 }
 
+#bg-video {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: clip;
+  z-index: -1;
+  opacity: .16;
+  filter: blur(30px);
+}
+
 footer {
   color: var(--mid-light);
   font-size: 12px;
@@ -49,7 +63,7 @@ footer {
 
 .card {
   position: absolute;
-  left: 30px;
+  left: 50px;
   top: 30px;
   display: flex;
   flex-direction: row;
@@ -61,8 +75,9 @@ footer {
 }
 
 .card > h2 {
-  font-size: 40px;
-  font-weight: 200;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 3em;
   margin: 0;
 }
 
@@ -76,13 +91,12 @@ footer {
 }
 
 
-
 nav {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   position: absolute;
-  left: 30px;
+  left: 70px;
   top: 120px;
 }
 
@@ -112,6 +126,7 @@ nav > a:hover {
 
 .info > h3 {
   margin: 0;
+  font-size: 21px;
 }
 
 .info > h3 > strong {
@@ -120,11 +135,12 @@ nav > a:hover {
 
 .info > p {
   font-weight: 300;
+  font-size: 18px;
 }
 
 .info > span {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 
@@ -241,6 +257,11 @@ nav > a:hover {
   animation: point .4s 2;
 }
 
+.project-card:hover img {
+  opacity: 1;
+  transform: scale(1);
+}
+
 .project-card > svg {
   position: absolute;
   height: 20px;
@@ -250,6 +271,9 @@ nav > a:hover {
 }
 
 .project-card > img {
+  opacity: .2;
+  transform: scale(.9);
+  transition: all .5s ease;
   margin: 10px 20px;
   width: 160px;
   height: 160px;
@@ -337,6 +361,24 @@ nav > a:hover {
 .contact  span  svg:active {
   color: var(--mid-dark);
 }
+
+.clipboard-msg {
+  opacity: 0;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  transition: all .5s ease-in-out;
+  font-weight: 300;
+  transform: translateY(40px);
+  background-color: var(--shadow10);
+  border-radius: 3px;
+  padding: 7px 12px;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .visible {
   animation: appear .7s forwards ease-in;
@@ -512,18 +554,4 @@ nav > a:hover {
 @keyframes fade {
   0% {opacity: 1;}
   100% {opacity: 0;}
-}
-
-#bg-video {
-  box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: clip;
-  z-index: -1;
-  opacity: .1;
-  filter: blur(30px);
 }

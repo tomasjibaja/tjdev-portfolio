@@ -9,9 +9,16 @@ export const projects = [
   {
     title: 'Kinta Health (mock)',
     thumbnail: 'kintahealth.png',
-    description: 'Aplicación MERN de gestión de turnos para entidades sanitarias',
+    description: 'Aplicación web de gestión de turnos para entidades sanitarias',
     skills: ['MERN'],
     url: 'https://kinta-health.vercel.app/'
+  },
+  {
+    title: 'Carepulse (mock)',
+    thumbnail: 'carepulse.png',
+    description: 'Aplicación web para gestión de turnos',
+    skills: ['NEXT JS'],
+    url: 'https://tj-carepulse.vercel.app/'
   },
   {
     title: 'Ceryt',
