@@ -16,7 +16,6 @@ function App() {
         </div>
         <Nav />
         <Router />
-      {/* <footer>&#169; Tomás Jibaja</footer> */}
       </div>
       <BackgroundVideo />
     </BrowserRouter>

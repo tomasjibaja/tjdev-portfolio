@@ -8,7 +8,6 @@ const Projects = () => {
 
   const handleScroll = (e) => {
     setScrollPercent((e.target.scrollLeft * 100) / e.target.scrollWidth)
-    console.log(scrollPercent)
   }
 
   return (

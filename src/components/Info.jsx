@@ -5,6 +5,7 @@ import { DiAndroid, DiApple, DiCode, DiCodeBadge, DiDatabase, DiFirefox } from "
 import { FaLaptopCode, FaWifi } from 'react-icons/fa';
 import { LiaHandPointerSolid } from "react-icons/lia";
 import { MdOutlinePowerSettingsNew } from "react-icons/md";
+import './LaptopAnimation.css'
 
 
 const Info = () => {
@@ -51,7 +52,6 @@ const shuffleIcons = () => {
       <p>
         Diseño y creación de aplicaciones y sitios web con estilo<br/>
       </p>
-      {/* <span>Bernal, Buenos Aires, Argentina 🇦🇷</span> */}
     </div>
   )
 }
