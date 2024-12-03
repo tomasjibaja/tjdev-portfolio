@@ -28,6 +28,27 @@ export const projects = [
     url: 'https://ceryt0.vercel.app/'
   },
   {
+    title: 'App de turismo',
+    thumbnail: 'viajes.png',
+    description: 'Maqueta de sitio con destinos para viajar y funcionalidad estilo carrito (mock)',
+    skills: ['HTML', 'CSS', 'JS', 'REACT'],
+    url: 'https://app-viajes.vercel.app/'
+  },
+  {
+    title: 'Sitio de películas',
+    thumbnail: 'pelis.png',
+    description: 'Consumición de OMDb para buscador de películas en Cines Argentinos (mock)',
+    skills: ['HTML', 'CSS', 'JS', 'REACT'],
+    url: 'https://buscador-de-peliculas-omega.vercel.app/'
+  },
+  {
+    title: 'Carrito de compras',
+    thumbnail: 'shop.png',
+    description: 'Consumición de API de productos para maquetar e-commerce (mock)',
+    skills: ['HTML', 'CSS', 'JS', 'REACT'],
+    url: 'https://carrito-compras-psi.vercel.app/'
+  },
+  {
     title: 'Jyotish del Sur',
     thumbnail: 'jds.png',
     description: 'Sitio web para el astrólogo védico Federico Assunto',
@@ -40,26 +61,5 @@ export const projects = [
     description: 'Sitio web para instructora de Eutonía y Yoga',
     skills: ['HTML', 'CSS', 'JS'],
     url: 'http://www.silvinaregueiraeutonia.com.ar/'
-  },
-  {
-    title: 'Carrito de compras',
-    thumbnail: 'shop.png',
-    description: 'Consumición de API de productos (DummyJSON) para maquetar un sitio estilo e-commerce (mock)',
-    skills: ['HTML', 'CSS', 'JS', 'REACT'],
-    url: 'https://carrito-compras-psi.vercel.app/'
-  },
-  {
-    title: 'App de turismo',
-    thumbnail: 'viajes.png',
-    description: 'Maqueta de sitio con destinos para viajar y funcionalidad estilo carrito (mock)',
-    skills: ['HTML', 'CSS', 'JS', 'REACT'],
-    url: 'https://app-viajes.vercel.app/'
-  },
-  {
-    title: 'Sitio de películas',
-    thumbnail: 'pelis.png',
-    description: 'Consumición de API de películas (OMDb) para maquetar un buscador de películas que linkea a Cines Argentinos (mock)',
-    skills: ['HTML', 'CSS', 'JS', 'REACT'],
-    url: 'https://buscador-de-peliculas-omega.vercel.app/'
   },
 ]
