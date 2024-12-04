@@ -1,8 +1,17 @@
 import React, { useRef, useEffect } from 'react'
 
-const BackgroundVideo = () => {
+const BackgroundVideo = ({ lightOn }) => {
 
   const videoRef = useRef()
+
+  const dark = {
+    opacity: '.2'
+  }
+
+  const light = {
+    opacity: '.9',
+    filter: 'blur(40px) invert(1) brightness(1.2) hue-rotate(300deg)'
+  }
 
   useEffect(() => {
     videoRef.current.playbackRate = 0.5
@@ -10,8 +19,8 @@ const BackgroundVideo = () => {
 
   return (
     <div>
-      <video ref={videoRef} loop autoPlay muted id='bg-video'>
-        <source src={'../video.mp4'} type='video/mp4' play='true' />
+      <video ref={videoRef} loop autoPlay muted style={lightOn ? light : dark} id='bg-video'>
+        <source src='../video.mp4' type='video/mp4' play='true' />
       </video>
     </div>
   )

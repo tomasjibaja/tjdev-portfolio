@@ -12,8 +12,8 @@ const Projects = () => {
 
   return (
     <>
-      <div className="fade-effect fade-start"></div>
-      <div className="fade-effect fade-end"></div>
+      {/* <div className="fade-effect fade-start"></div>
+      <div className="fade-effect fade-end"></div> */}
       <div onScroll={(e) => handleScroll(e)} className="projects-wrapper visible">
         {projects.map((elem, index) => {
           return (

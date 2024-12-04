@@ -6,11 +6,22 @@ import { FaLaptopCode, FaWifi } from 'react-icons/fa';
 import { LiaHandPointerSolid } from "react-icons/lia";
 import { MdOutlinePowerSettingsNew } from "react-icons/md";
 import './LaptopAnimation.css'
+import { useEffect } from 'react';
 
+const fonts = [
+  'Jura',
+  'Walter Turncoat',
+  'Twinkle Star',
+  'DynaPuff',
+  'Roboto',
+  'Nunito',
+  'Gruppo'
+]
 
 const Info = () => {
 
   const [powerOn, setPowerOn] = useState(false)
+  const [randomFont, setRandomFont] = useState({ fontFamily: 'Jura' })
 
   const [icons, setIcons] = useState([
   <DiCode />,
@@ -22,6 +33,17 @@ const Info = () => {
   <FaWifi />,
   <LiaHandPointerSolid />
 ])
+
+const changeRandomFont = () => {
+  let newFont = fonts[Math.floor(Math.random() * fonts.length)];
+  setRandomFont({ fontFamily: `${newFont}`})
+
+  let ms = Math.max(5000, Math.round(Math.random() * 30000));
+
+  setTimeout(() => {
+    changeRandomFont()
+  }, ms )
+}
 
 const shuffleIcons = () => {
     let arr = [...icons];
@@ -39,6 +61,12 @@ const shuffleIcons = () => {
     setPowerOn(!powerOn)
   }
 
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     changeRandomFont()
+  //   }, 1000)
+  // }, [])
+
   return (
     <div className='info visible'>
       <div className={`info-icon-field ${powerOn && 'power-on'}`} >
@@ -50,7 +78,7 @@ const shuffleIcons = () => {
       </div>
       <h3><strong>Desarrollo web</strong></h3>
       <p>
-        Diseño y creación de aplicaciones y sitios web con estilo<br/>
+        Diseño y creación de aplicaciones y sitios web con <span className='random-font' style={randomFont}>estilo</span><br/>
       </p>
     </div>
   )
