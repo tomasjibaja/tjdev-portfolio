@@ -10,7 +10,7 @@ import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 function App() {
 
-  const [lightOn, setLightOn] = useState(true)
+  const [lightOn, setLightOn] = useState(false)
 
   const darkTheme = {
     '--dark': '#040D12',
