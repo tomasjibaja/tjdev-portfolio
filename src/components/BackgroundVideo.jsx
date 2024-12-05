@@ -5,12 +5,14 @@ const BackgroundVideo = ({ lightOn }) => {
   const videoRef = useRef()
 
   const dark = {
-    opacity: '.2'
+    opacity: '.2',
+    filter: 'blur(30px)'
   }
 
   const light = {
     opacity: '.9',
-    filter: 'blur(40px) invert(1) brightness(1.2) hue-rotate(300deg)'
+    // filter: 'blur(30px) invert(1) brightness(1.2) hue-rotate(300deg)',
+    filter: 'blur(30px) invert(1) hue-rotate(300deg)'
   }
 
   useEffect(() => {

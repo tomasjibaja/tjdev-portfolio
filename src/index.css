@@ -14,6 +14,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  filter: drop-shadow(none);
+
   /* PALETA ORIGINAL */
   /*
   --dark: #181818;

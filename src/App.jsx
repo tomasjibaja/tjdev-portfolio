@@ -27,14 +27,14 @@ function App() {
   }
 
   const lightTheme = {
-    '--dark': '#040612',
+    '--dark': 'rgba(3, 6, 9, .3)',
     '--mid-dark': '#655196',
     '--mid-light': '#494a77',
     '--old-light': '#505bac',
     '--light': '#2f0185',
     '--green-light': '#3a48a0',
-    '--shadow10': 'rgba(50, 50, 60, .1)',
-    '--shadow30': 'rgba(50, 50, 60, .3)',
+    '--shadow10': 'rgba(150, 150, 200, .3)',
+    '--shadow30': 'rgba(200, 200, 200, .3)',
     '--shadow70': 'rgba(50, 50, 60, .7)',
     '--shadow90': 'rgba(50, 50, 60, .9)',
   }

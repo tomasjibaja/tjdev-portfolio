@@ -22,6 +22,7 @@
   --shadow90: rgba(50, 50, 60, 0.9); */
 }
 
+
 .porfolio {
   position: absolute;
   width: 95vw;
@@ -33,6 +34,7 @@
   color: var(--light);
   border: 1px solid var(--mid-light);
   box-shadow: inset 0 0 20px 12px var(--shadow10);
+  transition: all 1s ease;
 }
 
 strong {
@@ -50,7 +52,7 @@ strong {
   object-fit: cover;
   overflow: clip;
   z-index: -1;
-  filter: blur(30px);
+  /* filter: blur(30px); */
 }
 
 .theme-select {
@@ -59,9 +61,10 @@ strong {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  top: 3vh;
-  right: 1vw;
+  bottom: 3vh;
+  left: 1vw;
   width: 7vw;
+  z-index: 1;
 }
 
 .theme-select > svg {
@@ -98,6 +101,7 @@ strong {
   font-size: 3em;
   margin: 0;
   color: var(--green-light);
+  transition: all 1s ease;
 }
 
 .card>img {
@@ -148,6 +152,7 @@ nav>a:hover {
 .info>h3 {
   margin: 0;
   font-size: 34px;
+  transition: all 1s ease;
 }
 
 .info>h3>strong {
@@ -157,6 +162,7 @@ nav>a:hover {
 .info>p {
   font-weight: 300;
   font-size: 25px;
+  transition: all 1s ease;
 }
 
 .random-font {
@@ -325,6 +331,7 @@ nav>a:hover {
   font-weight: 500;
   margin: 0;
   text-align: left;
+  transition: all 1s ease;
 }
 
 .project-info>p {
@@ -332,6 +339,7 @@ nav>a:hover {
   text-align: left;
   font-size: 18px;
   color: var(--mid-light);
+  transition: all 1s ease;
 }
 
 .project-info>div {
@@ -346,6 +354,7 @@ nav>a:hover {
   background-color: var(--shadow30);
   padding: 3px 7px;
   border-radius: 3px;
+  transition: all 1s ease;
 }
 
 
@@ -385,6 +394,7 @@ nav>a:hover {
 
 .contact .email {
   font-size: 27px;
+  transition: all 1s ease;
 }
 
 .contact-icons-copy:hover,
