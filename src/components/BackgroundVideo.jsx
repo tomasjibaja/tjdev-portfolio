@@ -22,7 +22,7 @@ const BackgroundVideo = ({ lightOn }) => {
   }, [])
 
   return (
-    <div className='video-wrapper'>
+    <div>
       <video ref={videoRef} loop autoPlay muted style={lightOn ? light : dark} id='bg-video' >
         <source src='../video.mp4' type='video/mp4' play='true' />
       </video>
