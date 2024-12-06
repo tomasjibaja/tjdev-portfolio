@@ -41,6 +41,14 @@ strong {
   font-weight: 700;
 }
 
+.video-wrapper {
+  animation: appear 3s ease forwards;
+}
+
+.hidden {
+  opacity: 0;
+}
+
 #bg-video {
   box-sizing: border-box;
   position: absolute;

@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from 'react'
+import { useState } from 'react'
 
 const BackgroundVideo = ({ lightOn }) => {
 
   const videoRef = useRef()
+  const [loaded, setLoaded] = useState(false)
 
   const dark = {
     opacity: '.2',
@@ -17,10 +19,11 @@ const BackgroundVideo = ({ lightOn }) => {
 
   useEffect(() => {
     videoRef.current.playbackRate = 0.5
+    if (videoRef !== undefined) setLoaded(true)
   }, [])
 
   return (
-    <div>
+    <div className={`hidden ${loaded && 'video-wrapper'}`}>
       <video ref={videoRef} loop autoPlay muted style={lightOn ? light : dark} id='bg-video'>
         <source src='../video.mp4' type='video/mp4' play='true' />
       </video>
