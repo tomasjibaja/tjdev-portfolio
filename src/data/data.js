@@ -14,11 +14,11 @@ export const projects = [
     url: 'https://kinta-health.vercel.app/'
   },
   {
-    title: 'Carepulse',
+    title: 'Ink-Tadé',
     thumbnail: 'carepulse.png',
     description: 'Aplicación web para gestión de turnos (mock)',
     skills: ['NEXT JS'],
-    url: 'https://tj-carepulse.vercel.app/'
+    url: 'https://ink-tade.vercel.app/'
   },
   {
     title: 'Ceryt',
