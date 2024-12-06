@@ -22,8 +22,8 @@ const BackgroundVideo = ({ lightOn }) => {
   }, [])
 
   return (
-    <div className={`hidden ${loaded && 'video-wrapper'}`}>
-      <video ref={videoRef} loop autoPlay muted style={lightOn ? light : dark} id='bg-video' onLoad={() => setLoaded(true)}>
+    <div className='video-wrapper'>
+      <video ref={videoRef} loop autoPlay muted style={lightOn ? light : dark} id='bg-video' >
         <source src='../video.mp4' type='video/mp4' play='true' />
       </video>
     </div>

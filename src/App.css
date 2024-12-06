@@ -42,11 +42,7 @@ strong {
 }
 
 .video-wrapper {
-  animation: appear 3s ease forwards;
-}
-
-.hidden {
-  opacity: 0;
+  animation: appear 7s ease forwards;
 }
 
 #bg-video {
