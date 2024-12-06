@@ -52,8 +52,13 @@ strong {
   object-fit: cover;
   overflow: clip;
   z-index: -1;
-  animation: appear 3s forwards;
+  animation: bg 3s forwards;
   /* filter: blur(30px); */
+}
+
+@keyframes bg {
+  from {opacity: 0;}
+  to {opacity: .2;}  
 }
 
 .theme-select {
