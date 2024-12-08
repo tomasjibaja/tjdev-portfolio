@@ -476,8 +476,9 @@ nav>a:hover {
     width: 85vw;
     z-index: 1;
     top: unset;
-    bottom: 2vh;
+    left: unset;
     right: unset;
+    bottom: 2vh;
     justify-content: space-between;
     user-select: none;
   }

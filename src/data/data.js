@@ -60,6 +60,6 @@ export const projects = [
     thumbnail: 'sre.png',
     description: 'Sitio web para instructora de Eutonía y Yoga',
     skills: ['HTML', 'CSS', 'JS'],
-    url: 'http://www.silvinaregueiraeutonia.com.ar/'
+    url: 'http://silvinaregueiraeutonia.vercel.app/'
   },
 ]
