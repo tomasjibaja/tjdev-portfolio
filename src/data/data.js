@@ -21,32 +21,32 @@ export const projects = [
     url: 'https://ink-tade.vercel.app/'
   },
   {
+    title: '5D Trips',
+    thumbnail: 'viajes.png',
+    description: 'Sitio con destinos para viajar y funcionalidad estilo carrito (mock)',
+    skills: ['HTML', 'CSS', 'JS', 'REACT'],
+    url: 'https://5d-trips.vercel.app/'
+  },
+  {
+    title: 'Dimensión Cine',
+    thumbnail: 'pelis.png',
+    description: 'Buscador de películas en Cines Argentinos con la API OMDB (mock)',
+    skills: ['HTML', 'CSS', 'JS', 'REACT'],
+    url: 'https://dimension-cine.vercel.app/'
+  },
+  {
+    title: 'Kint-A-Mart',
+    thumbnail: 'shop.png',
+    description: 'eCommerce basado en la API DummyJSON (mock)',
+    skills: ['HTML', 'CSS', 'JS', 'REACT'],
+    url: 'https://kint-a-mart.vercel.app/'
+  },
+  {
     title: 'Ceryt',
     thumbnail: 'ceryt.png',
     description: 'Aplicación-juego de educación musical para practicar y aprender células rítmicas',
     skills: ['HTML', 'CSS', 'JS'],
     url: 'https://ceryt0.vercel.app/'
-  },
-  {
-    title: 'App de turismo',
-    thumbnail: 'viajes.png',
-    description: 'Maqueta de sitio con destinos para viajar y funcionalidad estilo carrito (mock)',
-    skills: ['HTML', 'CSS', 'JS', 'REACT'],
-    url: 'https://app-viajes.vercel.app/'
-  },
-  {
-    title: 'Sitio de películas',
-    thumbnail: 'pelis.png',
-    description: 'Consumición de OMDb para buscador de películas en Cines Argentinos (mock)',
-    skills: ['HTML', 'CSS', 'JS', 'REACT'],
-    url: 'https://buscador-de-peliculas-omega.vercel.app/'
-  },
-  {
-    title: 'Carrito de compras',
-    thumbnail: 'shop.png',
-    description: 'Consumición de API de productos para maquetar e-commerce (mock)',
-    skills: ['HTML', 'CSS', 'JS', 'REACT'],
-    url: 'https://carrito-compras-psi.vercel.app/'
   },
   {
     title: 'Jyotish del Sur',
