@@ -15,14 +15,14 @@ export const projects = [
   },
   {
     title: 'Ink-Tadé',
-    thumbnail: 'carepulse.png',
+    thumbnail: 'ink-tade.png',
     description: 'Aplicación web para gestión de turnos (mock)',
     skills: ['NEXT JS'],
     url: 'https://ink-tade.vercel.app/'
   },
   {
     title: '5D Trips',
-    thumbnail: 'viajes.png',
+    thumbnail: '5d-trips.png',
     description: 'Sitio con destinos para viajar y funcionalidad estilo carrito (mock)',
     skills: ['HTML', 'CSS', 'JS', 'REACT'],
     url: 'https://5d-trips.vercel.app/'
@@ -36,7 +36,7 @@ export const projects = [
   },
   {
     title: 'Kint-A-Mart',
-    thumbnail: 'shop.png',
+    thumbnail: 'kint-a-mart.png',
     description: 'eCommerce basado en la API DummyJSON (mock)',
     skills: ['HTML', 'CSS', 'JS', 'REACT'],
     url: 'https://kint-a-mart.vercel.app/'
