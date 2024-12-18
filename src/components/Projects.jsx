@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { projects } from "../data/data";
 import ProjectCard from "./ProjectCard";
 
-const Projects = () => {
+const Projects = ({engOn}) => {
 
   const [scrollPercent, setScrollPercent] = useState();
 
@@ -17,7 +17,7 @@ const Projects = () => {
       <div onScroll={(e) => handleScroll(e)} className="projects-wrapper visible">
         {projects.map((elem, index) => {
           return (
-            <ProjectCard elem={elem} key={index} scrollPercent={scrollPercent} incrementRange={(108 / (projects.length) * index)} />
+            <ProjectCard elem={elem} key={index} engOn={engOn} scrollPercent={scrollPercent} incrementRange={(108 / (projects.length) * index)} />
           );
         })}
         <div style={{ width: '20%' }}>

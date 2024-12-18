@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { useEffect } from 'react';
 import { useState } from 'react';
 
-const ProjectCard = ({ elem, scrollPercent, incrementRange }) => {
+const ProjectCard = ({ elem, scrollPercent, incrementRange, engOn }) => {
 
   const [isVisible, setIsVisible] = useState(scrollPercent === 0 ? true : false)
 
@@ -18,13 +18,13 @@ const ProjectCard = ({ elem, scrollPercent, incrementRange }) => {
   }, [scrollPercent])
 
   return (
-    <Link target="blank" to={elem.url}>
+    <Link target="_blank" to={elem.url}>
       <div className={`project-card ${isVisible && 'active-project'}`}>
         <MdArrowOutward />
         <img src={`./${elem.thumbnail}`} alt="" />
         <div className="project-info">
           <h3>{elem.title}</h3>
-          <p>{elem.description}</p>
+          <p>{engOn ? elem.description : elem.descriptionSpa}</p>
           <div className="project-skills">
             {elem.skills.map((elem, i) => {
               return <span key={i}>{elem}</span>;

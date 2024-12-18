@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <nav>
       <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
-        INFO
+        ABOUT
       </NavLink>
       <NavLink
         to="/skills"
@@ -17,13 +17,13 @@ const Nav = () => {
         to="/projects"
         className={({ isActive }) => (isActive ? "active" : "")}
       >
-        PROYECTOS
+        WORK
       </NavLink>
       <NavLink
         to="/contact"
         className={({ isActive }) => (isActive ? "active" : "")}
       >
-        CONTACTO
+        CONTACT
       </NavLink>
     </nav>
   );

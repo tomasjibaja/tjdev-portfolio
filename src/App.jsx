@@ -5,12 +5,14 @@ import './App.css'
 import BackgroundVideo from './components/BackgroundVideo'
 import { useState } from 'react'
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
+import { RiTranslate2 } from "react-icons/ri";
 
 
 
 function App() {
 
-  const [lightOn, setLightOn] = useState(false)
+  const [lightOn, setLightOn] = useState(false);
+  const [engOn, setEngOn] = useState(false)
 
   const darkTheme = {
     '--dark': '#040D12',
@@ -45,12 +47,13 @@ function App() {
         <div className="theme-select">
           <MdOutlineDarkMode className={!lightOn ? 'active-theme-button' : 'inactive-theme-button'} onClick={() => setLightOn(false)} />
           <MdOutlineLightMode className={lightOn ? 'active-theme-button' : 'inactive-theme-button'} onClick={() => setLightOn(true)} />
+          <RiTranslate2 onClick={() => setEngOn(!engOn)} />
         </div>
         <div className="card">
           <h2>TOMAS JIBAJA</h2>
         </div>
         <Nav />
-        <Router />
+        <Router engOn={engOn} />
       </div>
       <BackgroundVideo lightOn={lightOn} />
     </BrowserRouter>
